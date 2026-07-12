@@ -1,0 +1,294 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0e14;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #131722;
+    border-bottom: 1px solid #1f2635;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo .logo-icon {
+    color: #00e676;
+}
+
+.logo span {
+    color: #00e676;
+}
+
+.nav-links a {
+    color: #b2b9c5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links a i {
+    margin-right: 5px;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #00e676;
+}
+
+.nav-auth .btn-signin {
+    background: transparent;
+    border: none;
+    color: #b2b9c5;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-auth .btn-signup-nav {
+    background-color: #00e676;
+    color: #000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-auth .btn-signup-nav:hover {
+    background-color: #00c864;
+}
+
+/* Hero Section */
+.hero-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-content .highlight {
+    color: #00e676;
+}
+
+.sub-text {
+    color: #b2b9c5;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.green-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #00e676;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+/* Layout Split */
+.main-layout {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Offers Grid */
+.offers-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.offer-card {
+    background-color: #131722;
+    border: 1px solid #1f2635;
+    border-radius: 8px;
+    padding: 15px;
+    width: 170px;
+    text-align: left;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Placeholders gradient graphics simulating app icons */
+.placeholder-1 { background: linear-gradient(135deg, #2af598 0%, #009efd 100%); }
+.placeholder-2 { background: linear-gradient(135deg, #f107a3 0%, #7b2ff7 100%); }
+.placeholder-3 { background: linear-gradient(135deg, #ff930f 0%, #ff2959 100%); }
+
+.offer-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.offer-card p {
+    font-size: 12px;
+    color: #b2b9c5;
+    margin-bottom: 12px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.card-footer span:first-child {
+    color: #b2b9c5;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+/* Form Styling */
+.form-container {
+    background-color: #131722;
+    border: 1px solid #1f2635;
+    border-radius: 12px;
+    padding: 30px;
+    width: 380px;
+    text-align: left;
+}
+
+.form-container h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #656e7e;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    background-color: #1c2130;
+    border: 1px solid #2d3548;
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #00e676;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #2d3548;
+    z-index: 1;
+}
+
+.divider span {
+    background-color: #131722;
+    padding: 0 10px;
+    color: #656e7e;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-social {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google { background-color: #ffffff; color: #000; }
+.facebook { background-color: #1877f2; color: #fff; }
+.apple { background-color: #1a1a1a; color: #fff; }
+
+.form-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #656e7e;
+    margin-top: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offers-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
