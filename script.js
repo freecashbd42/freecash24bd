@@ -13,8 +13,12 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 
 // সোশ্যাল বাটনগুলোর জন্য ক্লিক ইভেন্ট (ডেমো)
 document.querySelectorAll('.btn-social').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(event) {
         const provider = this.textContent.trim();
-        console.log(`Redirecting to ${provider} authentication...`);
+        
+        if (provider.toLowerCase().includes('facebook')) {
+            event.preventDefault();
+            window.location.href = 'https://www.facebook.com';
+        }
     });
 });
